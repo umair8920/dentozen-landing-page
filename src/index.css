@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand: warm ivory + deep emerald + champagne gold */
+    --background: 36 33% 97%;
+    --foreground: 160 25% 12%;
+
+    --card: 36 40% 99%;
+    --card-foreground: 160 25% 12%;
+
+    --popover: 36 40% 99%;
+    --popover-foreground: 160 25% 12%;
+
+    --primary: 162 38% 18%;            /* deep emerald */
+    --primary-foreground: 36 40% 97%;
+    --primary-glow: 162 30% 28%;
+
+    --secondary: 36 30% 92%;
+    --secondary-foreground: 160 25% 14%;
+
+    --muted: 36 22% 90%;
+    --muted-foreground: 160 12% 38%;
+
+    --accent: 38 55% 58%;              /* champagne gold */
+    --accent-foreground: 160 30% 12%;
+    --accent-soft: 38 60% 88%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 36 40% 97%;
+
+    --border: 36 22% 86%;
+    --input: 36 22% 86%;
+    --ring: 162 38% 18%;
+
+    --radius: 0.75rem;
+
+    --gradient-warm: linear-gradient(180deg, hsl(36 40% 98%) 0%, hsl(36 33% 94%) 100%);
+    --gradient-emerald: linear-gradient(135deg, hsl(162 38% 18%) 0%, hsl(162 32% 26%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 55% 58%) 0%, hsl(38 65% 70%) 100%);
+
+    --shadow-soft: 0 10px 40px -15px hsl(162 38% 18% / 0.18);
+    --shadow-elegant: 0 30px 80px -30px hsl(162 38% 18% / 0.35);
+    --shadow-gold: 0 14px 40px -12px hsl(38 55% 50% / 0.45);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-serif { font-family: 'Fraunces', serif; }
+  .bg-gradient-warm { background: var(--gradient-warm); }
+  .bg-gradient-emerald { background: var(--gradient-emerald); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .transition-smooth { transition: var(--transition-smooth); }
+
+  .text-balance { text-wrap: balance; }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+  .animate-fade-up { animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .animate-shimmer { animation: shimmer 2.5s ease-in-out infinite; }
+}
