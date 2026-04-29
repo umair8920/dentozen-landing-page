@@ -28,7 +28,7 @@ const Offer = () => {
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-8 text-base shadow-gold">
               <a href="#book"><Sparkles className="w-5 h-5 mr-2" />Claim Your Free Whitening</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base border-primary-foreground/30 hover:bg-primary-foreground hover:text-primary">
               <a href="tel:01423205174">Call 01423 205174</a>
             </Button>
           </div>

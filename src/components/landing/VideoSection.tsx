@@ -1,7 +1,19 @@
-import { Play } from "lucide-react";
-import smileImage from "@/assets/smile-detail.jpg";
-
 const VideoSection = () => {
+  const videos = [
+    {
+      title: "Patient story video 1",
+      src: "https://www.youtube.com/embed/Nx3sgiH1pDo",
+    },
+    {
+      title: "Patient story video 2",
+      src: "https://www.youtube.com/embed/V_TtWgtfPPM",
+    },
+    {
+      title: "Patient story video 3",
+      src: "https://www.youtube.com/embed/oCQbmFZS6Kc",
+    },
+  ];
+
   return (
     <section id="results" className="py-24 lg:py-32 bg-secondary">
       <div className="container">
@@ -30,31 +42,26 @@ const VideoSection = () => {
           </div>
 
           <div className="space-y-6">
-            {/* Video placeholder */}
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-elegant bg-primary group cursor-pointer">
-              <img
-                src={smileImage}
-                alt="Composite bonding before and after results"
-                className="w-full h-full object-cover opacity-70 group-hover:opacity-60 transition-smooth"
-                loading="lazy"
-                width={1200}
-                height={900}
+              <iframe
+                src={videos[0].src}
+                title={videos[0].title}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full bg-accent flex items-center justify-center shadow-gold group-hover:scale-110 transition-smooth">
-                  <Play className="w-8 h-8 text-accent-foreground ml-1" fill="currentColor" />
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 bg-card/90 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs uppercase tracking-wider text-foreground">
-                Patient Story · Sarah, 28
-              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {/* Photo placeholders */}
-              {[1, 2].map((n) => (
-                <div key={n} className="aspect-square rounded-2xl bg-muted border border-border flex items-center justify-center text-muted-foreground text-xs uppercase tracking-wider hover:bg-accent-soft transition-smooth cursor-pointer">
-                  + Add Photo {n}
+              {videos.slice(1).map((video) => (
+                <div key={video.src} className="aspect-video rounded-2xl bg-muted border border-border overflow-hidden hover:bg-accent-soft transition-smooth cursor-pointer">
+                  <iframe
+                    src={video.src}
+                    title={video.title}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
                 </div>
               ))}
             </div>
