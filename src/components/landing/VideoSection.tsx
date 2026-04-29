@@ -2,7 +2,7 @@ const VideoSection = () => {
   const videos = [
     {
       title: "Patient story video 1",
-      src: "https://www.youtube.com/embed/Nx3sgiH1pDo",
+      src: "https://www.youtube.com/embed/Nx3sgiH1pDo?autoplay=1&mute=1&playsinline=1",
     },
     {
       title: "Patient story video 2",
