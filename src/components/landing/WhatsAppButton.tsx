@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "441423205174"; // UK number in international format, no +
+const WHATSAPP_NUMBER = "447904204839"; // UK number in international format, no +
 const MESSAGE = encodeURIComponent(
   "Hi Dentozen Harrogate, I'd like to book a composite bonding appointment. Please could you share your next available slot?"
 );

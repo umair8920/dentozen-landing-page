@@ -48,7 +48,7 @@ const BookingForm = () => {
                 </div>
                 <div>
                   <div className="font-medium text-foreground">Call directly</div>
-                  <a href="tel:01423205174" className="text-muted-foreground hover:text-primary">01423 205174</a>
+                  <a href="tel:447904204839" className="text-muted-foreground hover:text-primary">447904204839</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
