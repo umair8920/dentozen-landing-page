@@ -29,7 +29,7 @@ const Offer = () => {
               <a href="#book"><Sparkles className="w-5 h-5 mr-2" />Claim Your Free Whitening</a>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base border-primary-foreground/30 hover:bg-primary-foreground hover:text-primary">
-              <a href="tel:447904204839">Call 447904204839</a>
+              <a href="tel:+44 7904 204839">Call +44 7904 204839</a>
             </Button>
           </div>
         </div>

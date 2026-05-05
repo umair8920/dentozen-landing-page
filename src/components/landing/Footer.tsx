@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               6 Oxford Street<br />
               Harrogate, HG1 1QJ<br />
-              447904204839<br />
+              +44 7904 204839<br />
               dentozenharrogate@gmail.com
             </p>
           </div>

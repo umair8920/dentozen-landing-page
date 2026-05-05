@@ -21,8 +21,8 @@ const Navbar = () => {
           <a href="#faq" className="hover:text-primary transition-smooth">FAQ</a>
         </nav>
         <div className="flex items-center gap-3">
-          <a href="tel:447904204839" className="hidden sm:flex items-center gap-2 text-sm text-primary">
-            <Phone className="w-4 h-4" /> 447904204839
+          <a href="tel:+44 7904 204839" className="hidden sm:flex items-center gap-2 text-sm text-primary">
+            <Phone className="w-4 h-4" /> +44 7904 204839
           </a>
           <Button asChild variant="default" size="sm" className="bg-primary hover:bg-primary-glow text-primary-foreground">
             <a href="#book">Book Consultation</a>
